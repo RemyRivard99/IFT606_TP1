@@ -1,0 +1,6 @@
+1.a : 
+Si Eve n'a aucune informations sur m et k avant de voir c, elle n'apprend rien en voyant c. Puisqu'à chaque fois qu'un message sera envoyé, une nouvelle clé aléatoire sera généré. Envoyer plusieurs fois le même message résulterait en plusieurs cryptogrammes différents et donc plusieurs clés. Si Eve apprend une paire (m,c), elle est capable d'en déduire la clé k qui a été utilisé pour chiffrer le message, mais elle n'est pas capable de déterminer l'algorithme qui génère les clés, ni les prochaines clés. Elle n'a besoin que d'une cle. 
+
+
+1.b 
+Non, puisqu'en theorie, pour inverser une chaine de bits Eve n'a besoin que d'inverser chaque bit avec l'operateur XOR et une cle remplie de "1", par exemple : key = "1111 1111 1111 1111" . Par contre, puisque pour obtenir le message, il faut utiliser l'operateur XOR avec une cle qui n'est pas exclusivement des "1", c'est donc impossible. Il faudrait que Eve decrypte le message avec la cle, applique l'operande XOR sur sa nouvelle chaine, le re-encrypte, puis qu'elle l'envoie a Bob.  

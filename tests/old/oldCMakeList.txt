@@ -1,0 +1,10 @@
+
+target_include_directories(cryptoTests
+    PUBLIC 
+		$ENV{BOOST_INCLUDEDIR}
+)
+
+link_directories(cryptoTests
+    PUBLIC 
+		$ENV{BOOST_LIBRARYDIR}
+)

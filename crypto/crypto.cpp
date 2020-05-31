@@ -1,5 +1,6 @@
 #include "crypto.h"
 #include <ctime>
+#include <string>
 
 /*
 		srand change le parametre "seed" de rand() qui genere des nombres.
@@ -16,7 +17,7 @@ unsigned short generateShortKey() {
 	return key;		//randomize un masque de 16 bits;
 }
 
-unsigned short xorDecipher(unsigned short message, unsigned short key) {
+unsigned short xorCypher(unsigned short message, unsigned short key) {
 	return message ^ key;
 }
 
